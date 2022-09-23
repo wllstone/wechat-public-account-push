@@ -77,21 +77,17 @@ export const USER_CONFIG = {
             openUrl: "https://www.bilibili.com",
             // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
             festivals: [
-                // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-                // {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
-                // {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-                // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-                // {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-                // {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+                {"type": "*生日", "name": "兔子小姐", "year": "2000", "date": "11-25", isShowAge: true},
+                {"type": "*生日", "name": "狐狸先生", "year": "1998", "date": "02-17", isShowAge: true},
+                {"type": "节日", "name": "认识纪念日", "year": "2022", "date": "06-09"},
+                {"type": "节日", "name": "恋爱纪念日", "year": "2022", "date": "07-10"},
             ],
             // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
             customizedDateList: [
+                // 认识的日子
+                {"keyword": "know_day", date: "2022-06-09"},
                 // 在一起的日子
-                // {"keyword": "love_day", date: "2022-09-08"},
-                // 结婚纪念日
-                // {"keyword": "marry_day", date: "2022-09-09"},
-                // 退伍日
-                // {"keyword": "ex_day", date: "2022-09-10"},
+                {"keyword": "love_day", date: "2022-07-10"},
             ]
         },
         {
@@ -160,14 +156,10 @@ export const USER_CONFIG = {
      * --- 是否展示周岁信息结束 ---
      */
     FESTIVALS: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "兔子小姐", "year": "2000", "date": "11-25", isShowAge: true},
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "*生日", "name": "狐狸先生", "year": "1998", "date": "02-17", isShowAge: true},
-        {"type": "节日", "name": "认识的日子", "year": "2022", "date": "06-09"},
-        {"type": "节日", "name": "交往纪念日", "year": "2022", "date": "07-10"},
-        // 你可以不断按格式往下增加
-        // ...
+        {"type": "节日", "name": "认识纪念日", "year": "2022", "date": "06-09"},
+        {"type": "节日", "name": "恋爱纪念日", "year": "2022", "date": "07-10"},
     ],
 
     /**
@@ -188,12 +180,6 @@ export const USER_CONFIG = {
         {"keyword": "know_day", date: "2022-06-09"},
         // 在一起的日子
         {"keyword": "love_day", date: "2022-07-10"},
-        // 结婚纪念日
-        // {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
-        // {"keyword": "ex_day", date: "2022-09-10"},
-        // 你可以不断按格式往下增加
-        // ...
     ],
 
     /** 插槽 */
