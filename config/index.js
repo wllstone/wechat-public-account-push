@@ -92,18 +92,24 @@ export const USER_CONFIG = {
         },
         {
             name: "宝贝",
-            id: "",
-            useTemplateId: "",
-            province: "",
-            city: "",
-            horoscopeDate: '',
+            id: "oFZl75lTfiDqrrayuSWxI9rFbcCU",
+            useTemplateId: "yELIHE6rONvP7WTlXNJbSCeqPGWGP-ByHtMt4Ov9YnI",
+            province: "四川",
+            city: "成都",
+            horoscopeDate: '12-20',
             horoscopeDateType: '',
             openUrl: "https://www.bilibili.com",
-            festivals: [],
-            customizedDateList: []
+            festivals: [
+                {"type": "*生日", "name": "兔子小姐", "year": "2000", "date": "11-25", isShowAge: true},
+                {"type": "*生日", "name": "狐狸先生", "year": "1998", "date": "02-17", isShowAge: true},
+                {"type": "节日", "name": "认识纪念日", "year": "2022", "date": "06-09"},
+                {"type": "节日", "name": "恋爱纪念日", "year": "2022", "date": "07-10"},
+            ],
+            customizedDateList: [
+                {"keyword": "know_day", date: "2022-06-09"},
+                {"keyword": "love_day", date: "2022-07-10"},
+            ]
         },
-        // 你可以不断按格式往下增加
-        // ...
     ],
 
     /**
